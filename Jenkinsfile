@@ -15,7 +15,7 @@ pipeline {
     stage("Code Checkout") {
       steps {
         deleteDir()
-        git 'https://github.com/Aamir010/new-repo.git'
+        git 'https://github.com/abhiveer16/demo.git'
       }
     }
 
