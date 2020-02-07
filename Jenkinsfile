@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'ci-slave-linux'
+      label 'master'
     }
   }
 
