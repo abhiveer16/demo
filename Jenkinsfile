@@ -22,7 +22,7 @@ pipeline {
     stage("Java App - 1") {
       when {
         allOf {
-            branch 'master'; changeset glob: "java-app-1/**/*.java"
+            branch 'master'; changeset pattern: "java-app-1/**/*.java"
         }
       }
       steps {
@@ -33,7 +33,7 @@ pipeline {
     stage("Node App - 1") {
       when {
         allOf {
-            branch 'master'; changeset glob: "node-app-1/**/*.js"
+            branch 'master'; changeset pattern: "node-app-1/**/*.js"
         }
       }
       steps {
